@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>validasi kesiapan supir</h2>
+    <form action="#" method="post">
+     <table  cellpadding="7"  >
+           <!-- Nama -->
+            <tr>
+              <td><label for="nama supir">Nama:</label></td>
+             <td> <input type="text" name="nama" id="nama"></td>
+           </tr>
+
+           <!-- email -->
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="eamil" placeholder="email@gmai.com"></td>
+            </tr>
+
+            <!-- nomor telepon -->
+            <tr>
+                <td><label for="nomor_hp">Nomor Hp:</label></td>
+                <td><input type="tel" name="nomor_hp" id="nomor_hp" placeholder="08........."></td>
+            </tr>
+
+            <!-- destinasi -->
+             <tr>
+                 <td><label for="destinasi">Destinasi:</label></td>
+                 <td>
+                    <select name="destinasi" id="destinasi">
+                        <option value="#" disabled selected>--destinasi--</option>
+                        <option value="Medan">Medan</option>
+                       <option value="Pamatang siantar">pamatang siantar</option>
+                       <option value="Prapat">Prapat</option>
+                       <option value="Padang">Padang</option>
+                       <option value="Bukittinggi">Bukittinggi</option>
+                       <option value="Pekanbaru">Pekanbaru</option>
+                       <option value="Banda Aceh">Banda Aceh</option>
+                       <option value="Jakarta">Jakarta</option>
+                       <option value="Semarang">Semarang</option>
+                       <option value="Yogyakarta">Yogyakarta</option>
+                       <option value="Surabaya">Surabaya</option>
+                       <option value="Malang">Malang</option>
+                       <option value="Denpasar">Denpasar</option>
+                       <option value="Kupang">Kupang</option>
+                       <option value="Makassar">Makassar</option>
+                       <option value="Jayapura">Jayapura</option>
+                       <option value="Timika">Timika</option>
+
+                    </select>
+                 </td>
+             </tr>
+
+             <!-- tanggal Berangkat -->
+              <tr>
+                <td><label for="tanggal">Tanggal Berangkat:</label></td>
+                <td><input type="date"></td>
+              </tr>
+
+            <!-- waktu berangkat  -->
+               <tr>
+                <td><label for="waktu"> Waktu Berangkat:</label></td>
+                <td><input type="time" name="waktu berangkat" id="waktu berangkat"></td>
+               </tr>
+
+            <!-- penumpang  -->
+                <tr>
+                    <td><label for="penumpang">Jumlah Penumpang:</label></td>
+                    <td><input type="number" name="penumpang" min="1"></td>
+                </tr>
+
+            <!-- armada  -->
+                 <tr>
+                    <td>Pilih Armada:</td>
+                    <td>
+                        <input type="radio" id="mobil Hiace" name="armada" value="Mobil Hiace">
+                        <label for=" Mobil Hiace">Mobil Hiace</label> <br>  
+
+                        <input type="radio" id=" Bus Laksana" name="armada" value=" Bus Laksana">
+                        <label for="  Bus Laksana"> Bus Laksana</label><br>
+
+                        <input type="radio" id="Kijang Innova" name="armada" value="Kijang Innova">
+                        <label for=" Kijang Innova">Kijang Innova</label><br>
+
+                        <input type="radio" id=" MercedesBenz 10000 OH" name="armada" value=" MercedesBenz 10000 OH">
+                        <label for=" MercedesBenz 10000 OH">MercedesBenz 10000 OH</label>
+                    </td>
+                </tr>
+
+            <!-- kondisi supir -->
+                 <tr>
+                    <td>Kondisi Supir:</td>
+                    <td>
+                        <input type="checkbox" id="sehat" name="kondis" required>
+                        <label for=" Mobil Hiace">Sehat</label> <br>  
+
+                        <input type="checkbox" id="tidak ngantuk" name="kondisi" required>
+                        <label for=" tidak ngantuk"> Tidak dalam kondisi ngantuk berat</label><br>
+
+                        <input type="checkbox" id=" tidak_mabuk" name="kondisi" required>
+                        <label for="Tidak_mabuk">Tidak dalam pengaruh obat terlarang dan minuman yang memabukkan</label><br>
+                    </td>
+                 </tr>
+
+            <!-- surat kerja  -->
+                  <tr>
+                    <td><label for="surat kerja">Surat Kerja:</label></td>
+                    <td><input type="file" name="surat_kerja" id="surat_kerja"></td>
+                  </tr>
+
+     </table> <br>
+     <tr>
+     <td>
+        <input type="submit" value="kirim data" >
+        <input type="reset" value="reset data">
+     </td>
+     </tr>
+    </form>
+
+</body>
+</html>
